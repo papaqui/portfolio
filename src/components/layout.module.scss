@@ -1,0 +1,32 @@
+:root {
+  --magenta: #542c85;
+  --purple: #7026b9;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  border-top: 5px solid var(--purple);
+}
+
+.content {
+  flex-grow: 1;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1140px;
+  padding: 1rem;
+}
+
+.btn-container {
+  text-align: center;
+}
+.btn {
+  background-color: var(--magenta);
+  border: 1px solid var(--magenta);
+  color: #ffffff;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  margin: 1rem auto;
+}

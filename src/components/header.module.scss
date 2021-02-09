@@ -1,0 +1,31 @@
+.header {
+  padding: 1rem 0 3rem;
+}
+.title {
+  color: #000000;
+  font-size: 3rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.title:hover {
+  color: rgba(0, 0, 0, 0.8);
+}
+.nav-list {
+  display: flex; // stack items left to right
+  list-style-type: none; // remove bullet points
+  margin: 0;
+}
+.nav-item {
+  text-transform: uppercase;
+  color: #999999;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-right: 1.3rem;
+  text-decoration: none;
+}
+.nav-item:hover {
+  color: #666666;
+}
+.active-nav-item {
+  color: #333333;
+}
