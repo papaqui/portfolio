@@ -190,6 +190,15 @@ CONTACT
   margin-bottom: 1rem;
   display: inline-block;
 }
+.profile-socials {
+  display: flex;
+  list-style-type: none;
+  margin-left: 0;
+}
+.profile-socials-item {
+  margin-right: 1rem;
+  text-decoration: none;
+}
 
 .made-with {
   padding: 5rem 0 0;
@@ -206,4 +215,31 @@ CONTACT
 }
 .made-with-module {
   margin-bottom: 1.5rem;
+}
+
+@media screen and (max-width: 800px) {
+  .header-home p {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .profile-home {
+    display: block;
+  }
+  .profile-pic,
+  .profile-info {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .profile-pic {
+    margin-bottom: 1.5rem;
+  }
+  .profile-pic img {
+    margin-right: 0;
+  }
+  .profile-socials {
+    justify-content: center;
+  }
 }

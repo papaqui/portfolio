@@ -22,7 +22,7 @@ const Footer = () => {
         <img src={agave} alt="Agave" />
         <p>Hecho en México</p>
       </div>
-      <p>|</p>
+      <p className={footerStyles.separator}>|</p>
       <div className={footerStyles.footerDate}>
         <p>
           © {new Date().getFullYear()} {data.site.siteMetadata.author}

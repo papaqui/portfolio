@@ -28,3 +28,19 @@
 .footer-date {
   margin-left: 0.5rem;
 }
+
+@media screen and (max-width: 500px) {
+  .footer {
+    flex-direction: column;
+  }
+  .separator {
+    display: none;
+  }
+  .footer-made-in {
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+  }
+  .footer-date {
+    margin-left: 0;
+  }
+}

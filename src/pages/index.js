@@ -174,7 +174,7 @@ const IndexPage = () => {
           else.
         </p>
         <div className={blogStyles.profileHome}>
-          <div>
+          <div className={blogStyles.profilePic}>
             <img src={ProfilePhoto} alt="Fernando Papaqui Profile" />
           </div>
           <div className={blogStyles.profileInfo}>
@@ -185,7 +185,7 @@ const IndexPage = () => {
             >
               hola@rivaslevi.mx
             </a>
-            <ul className={blogStyles.homeSocials}>
+            <ul className={blogStyles.profileSocials}>
               <li>
                 <a
                   className={blogStyles.homeSocialsItem}
