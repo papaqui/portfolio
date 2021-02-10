@@ -19,15 +19,15 @@ const Header = () => {
 
   return (
     <header className={headerStyles.header}>
-      <div>
-        <img src={ProfilePhoto} alt="Fernando Papaqui" />
-        <h2>
-          <Link className={headerStyles.title} to="/">
+      <Link className={headerStyles.title} to="/">
+        <div className={headerStyles.headerLogo}>
+          <img src={ProfilePhoto} alt="Fernando Papaqui" />
+          <h2>
             {/* Inyect the value from graphql */}
             {data.site.siteMetadata.title}
-          </Link>
-        </h2>
-      </div>
+          </h2>
+        </div>
+      </Link>
       <div>
         <nav>
           <ul className={headerStyles.navList}>
@@ -40,15 +40,7 @@ const Header = () => {
                 Home
               </Link>
             </li>
-            <li>
-              <Link
-                className={headerStyles.navItem}
-                activeClassName={headerStyles.activeNavItem}
-                to="/about"
-              >
-                About me
-              </Link>
-            </li>
+
             <li>
               <Link
                 className={headerStyles.navItem}

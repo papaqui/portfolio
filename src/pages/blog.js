@@ -27,7 +27,7 @@ const BlogPage = () => {
   return (
     <Layout>
       <h1>Blog</h1>
-      <p>
+      <p className={blogStyles.blogDescription}>
         A carefully curated content about technology, podcasts, book
         recomendations and my journey as a developer.
       </p>

@@ -1,5 +1,5 @@
 .header-home {
-  margin: 5rem 0;
+  margin: 3rem 0;
 }
 .header-home h1 {
   font-size: 70px;
@@ -31,6 +31,10 @@
 /* -----------------------
 PROJECTS
 ----------------------- */
+.blog-description {
+  width: 50%;
+  font-size: 1.125rem;
+}
 .projects-posts {
   padding: 3rem 0;
 }
@@ -185,4 +189,21 @@ CONTACT
   text-decoration: none;
   margin-bottom: 1rem;
   display: inline-block;
+}
+
+.made-with {
+  padding: 5rem 0 0;
+  text-align: center;
+}
+.made-with p {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+.made-with img {
+  width: 1.9rem;
+  height: 1.9rem;
+  margin: 0 0.3rem;
+}
+.made-with-module {
+  margin-bottom: 1.5rem;
 }

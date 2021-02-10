@@ -120,7 +120,7 @@ const IndexPage = () => {
               <span role="img" aria-label="estetoscopio">
                 🩺
               </span>{' '}
-              BMI Calculator
+              Body Mass Index Calculator
             </h3>
             <p>
               Vanilla JS web app to calculate body mass index and get a balanced
@@ -220,12 +220,29 @@ const IndexPage = () => {
           </div>
         </div>
 
-        <div>
-          <p>Site made with:</p>
-          <img src={javaScriptLogo} alt="JavaScript" />
-          <img src={gatsbyLogo} alt="Gatsby.js" />
-          <p>Deployed with:</p>
-          <img src={netlifyLogo} alt="Netlify" />
+        <div className={blogStyles.madeWith}>
+          <div className={blogStyles.madeWithModule}>
+            <p>Site made with</p>
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={javaScriptLogo} alt="JavaScript" />
+            </a>
+            <a
+              href="https://www.gatsbyjs.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={gatsbyLogo} alt="Gatsby.js" />
+            </a>
+          </div>
+
+          <p>Deployed with</p>
+          <a href="https://www.netlify.com/" target="_blank" rel="noreferrer">
+            <img src={netlifyLogo} alt="Netlify" />
+          </a>
         </div>
       </div>
     </Layout>

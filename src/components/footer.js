@@ -3,6 +3,8 @@ import { graphql, useStaticQuery } from 'gatsby'
 
 import footerStyles from './footer.module.scss'
 
+import agave from '../img/agave.svg'
+
 const Footer = () => {
   const data = useStaticQuery(graphql`
     query {
@@ -16,10 +18,16 @@ const Footer = () => {
 
   return (
     <div className={footerStyles.footer}>
-      <p className={footerStyles.footerText}>
-        Hecho en México | © {new Date().getFullYear()}{' '}
-        {data.site.siteMetadata.author}
-      </p>
+      <div className={footerStyles.footerMadeIn}>
+        <img src={agave} alt="Agave" />
+        <p>Hecho en México</p>
+      </div>
+      <p>|</p>
+      <div className={footerStyles.footerDate}>
+        <p>
+          © {new Date().getFullYear()} {data.site.siteMetadata.author}
+        </p>
+      </div>
     </div>
   )
 }
