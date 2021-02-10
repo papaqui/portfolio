@@ -82,14 +82,24 @@ const IndexPage = () => {
         </ul>
       </div>
 
-      <div className={blogStyles.blogPosts}>
+      <div className={blogStyles.projectsPosts}>
         <h2>Projects</h2>
         <ol className={blogStyles.blogPostsList}>
-          <li className={blogStyles.blogPostItem}>
+          <li className={blogStyles.projectsPostItem}>
             <h3>Calculadora de Frecuencia Cardiaca Máxima</h3>
-            <h4>Javascript, HTML, CSS</h4>
-            <p></p>
-            Read more
+            <h4>
+              <span>Javascript</span>
+              <span>HTML</span>
+              <span>CSS</span>
+            </h4>
+          </li>
+          <li className={blogStyles.projectsPostItem}>
+            <h3>Calculadora de Indice Masa Corporal</h3>
+            <h4>
+              <span>Javascript</span>
+              <span>HTML</span>
+              <span>CSS</span>
+            </h4>
           </li>
         </ol>
       </div>
