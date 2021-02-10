@@ -16,38 +16,6 @@ const Footer = () => {
 
   return (
     <div className={footerStyles.footer}>
-      <ul className={footerStyles.footerSocials}>
-        <li>
-          <a
-            className={footerStyles.footerItem}
-            href="https://twitter.com/papaqui_dev"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Twitter
-          </a>
-        </li>
-        <li>
-          <a
-            className={footerStyles.footerItem}
-            href="https://github.com/papaqui"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Github
-          </a>
-        </li>
-        <li>
-          <a
-            className={footerStyles.footerItem}
-            href="https://www.linkedin.com/in/fernandopapaqui/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            LinkedIn
-          </a>
-        </li>
-      </ul>
       <p className={footerStyles.footerText}>
         Hecho en México | © {new Date().getFullYear()}{' '}
         {data.site.siteMetadata.author}
