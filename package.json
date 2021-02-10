@@ -20,7 +20,7 @@
     "@fortawesome/react-fontawesome": "^0.1.14",
     "gatsby": "^2.32.3",
     "gatsby-plugin-fontawesome-css": "^1.0.0",
-    "gatsby-plugin-prefetch-google-fonts": "^1.4.3",
+    "gatsby-plugin-google-fonts": "^1.0.1",
     "gatsby-plugin-sass": "^3.2.0",
     "gatsby-plugin-sharp": "^2.14.1",
     "gatsby-remark-images": "^3.11.0",
