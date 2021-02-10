@@ -1,3 +1,22 @@
+.header-home {
+}
+.header-home h1 {
+  font-size: 70px;
+  margin-bottom: 10px;
+}
+.header-home h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.header-home h3 {
+  font-size: 35px;
+  font-weight: 500;
+}
+.header-home p {
+  font-size: 1.125rem;
+  width: 50%;
+}
+
 .blog-posts {
   padding: 5rem 0;
 }
@@ -25,17 +44,30 @@
   transform: translateZ(0) scale(1, 1);
   backface-visibility: hidden;
 }
+
 .blog-post-item:hover {
-  transform: translateY(-5px);
+  /*transform: translateY(-5px);*/
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
 }
 
 .blog-post-title {
   margin-bottom: 1.45rem !important;
+  display: block;
   color: rgba(0, 0, 0, 0.8);
   text-decoration: none;
   transition: all 0.3s;
 }
 
-.blog-post-title:hover {
-  color: rgba(0, 0, 0, 0.6);
+.blog-post-item:hover .blog-post-title {
+  color: var(--purple);
+}
+
+.home-socials {
+  display: flex;
+  list-style-type: none;
+  margin-left: 0;
+}
+.home-socials-item {
+  margin-right: 1rem;
+  text-decoration: none;
 }

@@ -1,9 +1,12 @@
 .header {
   padding: 1rem 0 3rem;
 }
+.header h2 {
+  margin-bottom: 1rem !important;
+}
 .title {
-  color: #000000;
-  font-size: 3rem;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 1.4rem;
   text-decoration: none;
   transition: all 0.3s ease;
 }

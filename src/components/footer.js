@@ -48,7 +48,7 @@ const Footer = () => {
           </a>
         </li>
       </ul>
-      <p className={footerStyles.text}>
+      <p className={footerStyles.footerText}>
         Hecho en México | © {new Date().getFullYear()}{' '}
         {data.site.siteMetadata.author}
       </p>

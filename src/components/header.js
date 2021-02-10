@@ -18,12 +18,12 @@ const Header = () => {
 
   return (
     <header className={headerStyles.header}>
-      <h1>
+      <h2>
         <Link className={headerStyles.title} to="/">
           {/* Inyect the value from graphql */}
           {data.site.siteMetadata.title}
         </Link>
-      </h1>
+      </h2>
       <nav>
         <ul className={headerStyles.navList}>
           <li>
