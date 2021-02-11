@@ -3,6 +3,9 @@ module.exports = {
     title: 'fp/dev',
     author: 'Fernando Papaqui',
     description: 'Front-end web developer from Mexico',
+    url: 'https://www.fernandopapaqui.dev',
+    image: '/src/img/snap.jpg',
+    twitterUsername: '@papaqui_dev',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
