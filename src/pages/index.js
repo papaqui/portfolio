@@ -2,6 +2,7 @@ import React from 'react'
 import { Link, graphql, useStaticQuery } from 'gatsby'
 
 import Layout from '../components/layout'
+import Head from '../components/head'
 
 import layoutStyles from '../components/layout.module.scss'
 import blogStyles from './blog.module.scss'
@@ -39,6 +40,7 @@ const IndexPage = () => {
 
   return (
     <Layout>
+      <Head title="Home" />
       <div className={blogStyles.headerHome}>
         <h2>Hola! I'm</h2>
         <h1>Fernando Papaqui</h1>
