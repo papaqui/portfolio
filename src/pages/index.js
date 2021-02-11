@@ -25,17 +25,12 @@ const iconLinkedin = <FontAwesomeIcon icon={faLinkedinIn} />
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
     query {
-      allMarkdownRemark {
+      allContentfulBlogPost(sort: { fields: publishedDate, order: DESC }) {
         edges {
           node {
-            frontmatter {
-              title
-              date
-            }
-            excerpt
-            fields {
-              slug
-            }
+            title
+            slug
+            publishedDate(formatString: "DD.MM.YYYY")
           }
         }
       }
@@ -146,17 +141,17 @@ const IndexPage = () => {
       <div className={blogStyles.blogPosts}>
         <h2>Blog posts</h2>
         <ol className={blogStyles.blogPostsList}>
-          {data.allMarkdownRemark.edges.slice(0, 4).map(edge => (
+          {data.allContentfulBlogPost.edges.slice(0, 4).map(edge => (
             <li className={blogStyles.blogPostItem}>
               <Link
                 className={blogStyles.blogPostTitle}
-                to={`/blog/${edge.node.fields.slug}`}
+                to={`/blog/${edge.node.slug}`}
               >
-                <h3>{edge.node.frontmatter.title}</h3>
+                <h3>{edge.node.title}</h3>
               </Link>
-              <h4>{edge.node.frontmatter.date}</h4>
-              <p>{edge.node.excerpt}</p>
-              <Link to={`/blog/${edge.node.fields.slug}`}>Read more</Link>
+              <h4>{edge.node.publishedDate}</h4>
+              {/* <p>{edge.node.excerpt}</p> */}
+              <Link to={`/blog/${edge.node.slug}`}>Read more</Link>
             </li>
           ))}
         </ol>

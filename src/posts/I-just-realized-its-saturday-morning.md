@@ -7,9 +7,7 @@ date: '06.02.2021'
 
 I just realized it’s saturday morning, 7:12 am. I have headphones with some comfy lo_fi playlist on Spotify to not disturb my neighbors. I live in an Airbnb house which rents four rooms to travelers like me that decided to visit San Cristóbal de las Casas, in Chiapas, Mexico. I am studying and reading about CMS and Gatsby websites, drinking chamomile tea and having sweet bread from a local french bakery.
 
-Again, I just realized that I enjoy this routine so damn much. I feel healthy, I feel free. I feel I am making so much progress, like never before. I’ve made so much progress in my developer career in six months just by being disciplined and respecting my routine.
-
-I want to mention that my head doesn’t hurt, I didn’t drink yesterday, and I haven't drank since more than 200 days but I am not sure, I stopped counting when I was 150 days without drinking alcohol, and I feel alive.
+Again, I just realized that I enjoy this routine so much. I feel healthy, I feel free. Not to mention that my head doesn’t hurt, I've been behaving good I haven't drank since more than 200 days but I am not sure, I stopped counting when I was 150 days without drinking alcohol, and I feel alive.
 
 I am thankful by being alive and having this enlightenment that allows me to enjoy life, to study and to feel good. I was tired of my past life, my lifestyle was really not good and even though I enjoyed it (of course, alcohol makes you feel good) I have to recognize that this lifestyle is much better.
 
