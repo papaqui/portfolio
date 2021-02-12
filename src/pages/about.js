@@ -1,12 +1,12 @@
 import React from 'react'
 
 import Layout from '../components/layout'
-import Head from '../components/head'
+import SEO from '../components/seo'
 
 const AboutPage = () => {
   return (
     <Layout>
-      <Head title="About me" />
+      <SEO title="About me" />
       <h1>About me</h1>
     </Layout>
   )

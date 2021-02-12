@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'fp/dev',
-    titleTemplate: '%s · fp/dev',
+    titleTemplate: '%s | fp/dev',
     author: 'Fernando Papaqui',
     description: 'Front-end web developer from Mexico',
     url: 'https://www.fernandopapaqui.dev',

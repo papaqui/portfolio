@@ -2,7 +2,8 @@ import React from 'react'
 import { Link, graphql, useStaticQuery } from 'gatsby'
 
 import Layout from '../components/layout'
-import Head from '../components/head'
+// import Head from '../components/head'
+import SEO from '../components/seo'
 
 import layoutStyles from '../components/layout.module.scss'
 import blogStyles from './blog.module.scss'
@@ -40,7 +41,7 @@ const IndexPage = () => {
 
   return (
     <Layout>
-      <Head title="Home" />
+      <SEO title="Home" />
       <div className={blogStyles.headerHome}>
         <h2>Hola! I'm</h2>
         <h1>Fernando Papaqui</h1>
@@ -151,7 +152,9 @@ const IndexPage = () => {
               >
                 <h3>{edge.node.title}</h3>
               </Link>
-              <h4>{edge.node.publishedDate}</h4>
+              <h4 className={blogStyles.blogPostDate}>
+                {edge.node.publishedDate}
+              </h4>
               {/* <p>{edge.node.excerpt}</p> */}
               <Link to={`/blog/${edge.node.slug}`}>Read more</Link>
             </li>

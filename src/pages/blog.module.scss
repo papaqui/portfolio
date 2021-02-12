@@ -140,11 +140,16 @@ BLOG
 }
 
 .blog-post-title {
-  margin-bottom: 1.45rem !important;
+  margin-bottom: 0.5rem !important;
   display: block;
   color: rgba(0, 0, 0, 0.8);
   text-decoration: none;
   transition: all 0.3s;
+}
+.blog-post-date {
+  margin-bottom: 1.45rem !important;
+  font-weight: 400;
+  font-size: 0.9em;
 }
 
 .blog-post-item:hover .blog-post-title {

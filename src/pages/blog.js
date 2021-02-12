@@ -2,7 +2,7 @@ import React from 'react'
 import { Link, graphql, useStaticQuery } from 'gatsby'
 
 import Layout from '../components/layout'
-import Head from '../components/head'
+import SEO from '../components/seo'
 
 import blogStyles from './blog.module.scss'
 
@@ -23,7 +23,7 @@ const BlogPage = () => {
 
   return (
     <Layout>
-      <Head title="Blog" />
+      <SEO title="Blog" />
       <h1>Blog</h1>
       <p className={blogStyles.blogDescription}>
         A carefully curated content about technology, podcasts, book
@@ -41,7 +41,9 @@ const BlogPage = () => {
               >
                 <h3>{edge.node.title}</h3>
               </Link>
-              <h4>{edge.node.publishedDate}</h4>
+              <h4 className={blogStyles.blogPostDate}>
+                {edge.node.publishedDate}
+              </h4>
               <p>{edge.node.excerpt}</p>
 
               <Link to={`/blog/${edge.node.slug}`}>Read more</Link>
