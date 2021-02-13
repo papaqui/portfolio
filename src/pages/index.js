@@ -90,10 +90,46 @@ const IndexPage = () => {
         <ol className={blogStyles.projectsPostsList}>
           <li className={blogStyles.projectsPostItem}>
             <h3>
-              <span role="img" aria-label="heart">
-                ❤
-              </span>{' '}
-              Heart Rate Calculator
+              <Link to="/">
+                <span role="img" aria-label="floppy">
+                  💾
+                </span>{' '}
+                (This) Personal Porfolio
+              </Link>
+            </h3>
+            <p>
+              Made with Gatsby, deployed with Netlify, using Contentful CMS with
+              GraphQL and styles on SCSS.
+            </p>
+            <div>
+              <ul className={blogStyles.projectsStack}>
+                <li className={blogStyles.projectsStackItem}>
+                  <span>Gatsby</span>
+                </li>
+                <li className={blogStyles.projectsStackItem}>
+                  <span>React</span>
+                </li>
+                <li className={blogStyles.projectsStackItem}>
+                  <span>Netlify</span>
+                </li>
+                <li className={blogStyles.projectsStackItem}>
+                  <span>GraphQL</span>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li className={blogStyles.projectsPostItem}>
+            <h3>
+              <a
+                href="https://www.drpapaqui.com.mx/calculadora-de-frecuencia-cardiaca-maxima/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <span role="img" aria-label="heart">
+                  ❤
+                </span>{' '}
+                Heart Rate Calculator
+              </a>
             </h3>
             <p>
               Vanilla JS web app to calculate max and min heart rate for sports
@@ -105,20 +141,26 @@ const IndexPage = () => {
                   <span>Javascript</span>
                 </li>
                 <li className={blogStyles.projectsStackItem}>
-                  <span>HTML</span>
+                  <span>WordPress</span>
                 </li>
                 <li className={blogStyles.projectsStackItem}>
-                  <span>CSS</span>
+                  <span>Bootstrap</span>
                 </li>
               </ul>
             </div>
           </li>
           <li className={blogStyles.projectsPostItem}>
             <h3>
-              <span role="img" aria-label="estetoscopio">
-                🩺
-              </span>{' '}
-              Body Mass Index Calculator
+              <a
+                href="https://www.drpapaqui.com.mx/calculadora-indice-de-masa-corporal/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <span role="img" aria-label="estetoscopio">
+                  🩺
+                </span>{' '}
+                Body Mass Index Calculator
+              </a>
             </h3>
             <p>
               Vanilla JS web app to calculate body mass index and get a balanced
@@ -130,10 +172,10 @@ const IndexPage = () => {
                   <span>Javascript</span>
                 </li>
                 <li className={blogStyles.projectsStackItem}>
-                  <span>HTML</span>
+                  <span>WordPress</span>
                 </li>
                 <li className={blogStyles.projectsStackItem}>
-                  <span>CSS</span>
+                  <span>Bootstrap</span>
                 </li>
               </ul>
             </div>
