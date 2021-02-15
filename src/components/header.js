@@ -3,7 +3,7 @@ import { Link, graphql, useStaticQuery } from 'gatsby'
 
 import headerStyles from './header.module.scss'
 
-import ProfilePhoto from '../img/Fernando_Papaqui_profile_photo.jpg'
+import ProfilePhoto from '../images/Fernando_Papaqui_profile_photo.jpg'
 
 const Header = () => {
   // Create a variable to store the data we're fetching from the graphql api

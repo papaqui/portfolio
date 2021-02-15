@@ -14,10 +14,11 @@ import {
   faLinkedinIn,
 } from '@fortawesome/free-brands-svg-icons'
 
-import ProfilePhoto from '../img/Fernando_Papaqui_profile_photo.jpg'
-import javaScriptLogo from '../img/javascript.svg'
-import gatsbyLogo from '../img/gatsby.svg'
-import netlifyLogo from '../img/netlify.svg'
+import ProfilePhoto from '../images/Fernando_Papaqui_profile_photo.jpg'
+import javaScriptLogo from '../images/javascript.svg'
+import gatsbyLogo from '../images/gatsby.svg'
+import netlifyLogo from '../images/netlify.svg'
+import wordPressLogo from '../images/wordpress.svg'
 
 const iconTwitter = <FontAwesomeIcon icon={faTwitter} />
 const iconGithub = <FontAwesomeIcon icon={faGithub} />
@@ -60,13 +61,14 @@ const IndexPage = () => {
           <li>
             <a
               className={blogStyles.homeSocialsItem}
-              href="https://twitter.com/papaqui_dev"
+              href="https://www.linkedin.com/in/fernandopapaqui/"
               target="_blank"
               rel="noreferrer"
             >
-              {iconTwitter} Twitter
+              {iconLinkedin} LinkedIn
             </a>
           </li>
+
           <li>
             <a
               className={blogStyles.homeSocialsItem}
@@ -80,11 +82,11 @@ const IndexPage = () => {
           <li>
             <a
               className={blogStyles.homeSocialsItem}
-              href="https://www.linkedin.com/in/fernandopapaqui/"
+              href="https://twitter.com/papaqui_dev"
               target="_blank"
               rel="noreferrer"
             >
-              {iconLinkedin} LinkedIn
+              {iconTwitter} Twitter
             </a>
           </li>
         </ul>
@@ -244,11 +246,11 @@ const IndexPage = () => {
               <li>
                 <a
                   className={blogStyles.homeSocialsItem}
-                  href="https://twitter.com/papaqui_dev"
+                  href="https://www.linkedin.com/in/fernandopapaqui/"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  {iconTwitter} Twitter
+                  {iconLinkedin} LinkedIn
                 </a>
               </li>
               <li>
@@ -261,14 +263,15 @@ const IndexPage = () => {
                   {iconGithub} Github
                 </a>
               </li>
+
               <li>
                 <a
                   className={blogStyles.homeSocialsItem}
-                  href="https://www.linkedin.com/in/fernandopapaqui/"
+                  href="https://twitter.com/papaqui_dev"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  {iconLinkedin} LinkedIn
+                  {iconTwitter} Twitter
                 </a>
               </li>
             </ul>
@@ -294,10 +297,19 @@ const IndexPage = () => {
             </a>
           </div>
 
-          <p>Deployed with</p>
-          <a href="https://www.netlify.com/" target="_blank" rel="noreferrer">
-            <img src={netlifyLogo} alt="Netlify" />
-          </a>
+          <div className={blogStyles.madeWithModule}>
+            <p>Deployed with</p>
+            <a href="https://www.netlify.com/" target="_blank" rel="noreferrer">
+              <img src={netlifyLogo} alt="Netlify" />
+            </a>
+          </div>
+
+          <div className={blogStyles.madeWithModule}>
+            <p>Headless CMS</p>
+            <a href="http://wordpress.com/" target="_blank" rel="noreferrer">
+              <img src={wordPressLogo} alt="WordPress" />
+            </a>
+          </div>
         </div>
       </div>
     </Layout>

@@ -5,7 +5,7 @@ module.exports = {
     author: 'Fernando Papaqui',
     description: 'Front-end web developer from Mexico',
     url: 'https://www.fernandopapaqui.dev',
-    image: '/src/img/snap.jpg',
+    image: '/src/images/snap.jpg',
     twitterUsername: '@papaqui_dev',
   },
   plugins: [

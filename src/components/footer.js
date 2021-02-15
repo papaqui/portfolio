@@ -3,7 +3,7 @@ import { graphql, useStaticQuery } from 'gatsby'
 
 import footerStyles from './footer.module.scss'
 
-import agave from '../img/agave.svg'
+import agave from '../images/agave.svg'
 
 const Footer = () => {
   const data = useStaticQuery(graphql`
