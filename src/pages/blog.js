@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, graphql, useStaticQuery } from 'gatsby'
+import { Link, useStaticQuery } from 'gatsby'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
@@ -9,12 +9,13 @@ import blogStyles from './blog.module.scss'
 const BlogPage = () => {
   const data = useStaticQuery(graphql`
     query {
-      allContentfulBlogPost(sort: { fields: publishedDate, order: DESC }) {
+      allWpPost {
         edges {
           node {
             title
+            date(formatString: "DD.MM.YYYY")
+            excerpt
             slug
-            publishedDate(formatString: "DD.MM.YYYY")
           }
         }
       }
@@ -33,20 +34,22 @@ const BlogPage = () => {
       <div className={blogStyles.blogPosts}>
         <h2>Blog posts</h2>
         <ol className={blogStyles.blogPostsList}>
-          {data.allContentfulBlogPost.edges.map(edge => (
+          {data.allWpPost.edges.map(edge => (
             <li className={blogStyles.blogPostItem}>
+              <h3>{edge.node.title}</h3>
+              <h4 className={blogStyles.blogPostDate}>{edge.node.date}</h4>
+              <div
+                className={blogStyles.blogExcerpt}
+                dangerouslySetInnerHTML={{
+                  __html: edge.node.excerpt.slice(0, 100) + ' [...]',
+                }}
+              />
               <Link
-                className={blogStyles.blogPostTitle}
+                className={blogStyles.blogLink}
                 to={`/blog/${edge.node.slug}`}
               >
-                <h3>{edge.node.title}</h3>
+                Read more
               </Link>
-              <h4 className={blogStyles.blogPostDate}>
-                {edge.node.publishedDate}
-              </h4>
-              <p>{edge.node.excerpt}</p>
-
-              <Link to={`/blog/${edge.node.slug}`}>Read more</Link>
             </li>
           ))}
         </ol>
