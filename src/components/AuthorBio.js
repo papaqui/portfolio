@@ -11,9 +11,13 @@ export const AuthorFragment = graphql`
 `
 const AuthorBio = ({ author: { id, name, description } }) => {
   return (
-    <div className={`author-${id}`}>
+    // <div className={`author-${id}`}>
+    <div className={layoutStyles.authorSection}>
       <h2 className={layoutStyles.authorName}>{name}</h2>
-      <div dangerouslySetInnerHTML={{ __html: description }} />
+      <div
+        className={layoutStyles.authorDescription}
+        dangerouslySetInnerHTML={{ __html: description }}
+      />
     </div>
   )
 }

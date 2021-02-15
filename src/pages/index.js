@@ -33,6 +33,11 @@ const IndexPage = () => {
             date(formatString: "DD.MM.YYYY")
             excerpt
             slug
+            categories {
+              nodes {
+                name
+              }
+            }
           }
         }
       }
@@ -188,6 +193,11 @@ const IndexPage = () => {
         <ol className={blogStyles.blogPostsList}>
           {data.allWpPost.edges.slice(0, 4).map(edge => (
             <li className={blogStyles.blogPostItem}>
+              <p className={blogStyles.blogCategory}>
+                {edge.node.categories.nodes.map(cat => (
+                  <span className={blogStyles.tagCategory}>{cat.name}</span>
+                ))}
+              </p>
               <h3>{edge.node.title}</h3>
               <h4 className={blogStyles.blogPostDate}>{edge.node.date}</h4>
               <div

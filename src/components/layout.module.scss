@@ -33,3 +33,17 @@
   border-radius: 4px;
   margin: 1rem auto;
 }
+
+.author-section {
+  background: #f5f5f5;
+  padding: 2rem;
+  margin-top: 3rem;
+
+  h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  .author-description {
+    font-size: 0.9rem;
+  }
+}

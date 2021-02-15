@@ -162,6 +162,7 @@ BLOG
 }
 .blog-excerpt {
   margin-bottom: 2.5rem;
+  font-size: 0.9rem;
 }
 .blog-post-item:hover .blog-post-title {
   color: var(--purple);
@@ -175,6 +176,18 @@ BLOG
 }
 .blog-link:hover {
   opacity: 0.6;
+}
+.blog-category {
+  margin-bottom: 1rem;
+}
+.tag-category {
+  background: var(--purple);
+  color: #ffffff;
+  border-radius: 4px;
+  padding: 4px 8px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+  font-size: 0.8rem;
 }
 /* -----------------------
 CONTACT
