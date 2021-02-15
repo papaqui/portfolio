@@ -47,5 +47,12 @@ module.exports = {
       },
     },
     `gatsby-plugin-fontawesome-css`,
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: [
+          "G-MBPTEM7FJN", // Google Analytics / GA
+        ],
+      },
   ],
 }
