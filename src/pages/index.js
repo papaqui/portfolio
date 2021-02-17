@@ -7,6 +7,7 @@ import SEO from '../components/seo'
 import layoutStyles from '../components/layout.module.scss'
 import blogStyles from './blog.module.scss'
 
+import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faTwitter,
@@ -20,6 +21,7 @@ import gatsbyLogo from '../images/gatsby.svg'
 import netlifyLogo from '../images/netlify.svg'
 import wordPressLogo from '../images/wordpress.svg'
 
+const iconLink = <FontAwesomeIcon icon={faExternalLinkAlt} />
 const iconTwitter = <FontAwesomeIcon icon={faTwitter} />
 const iconGithub = <FontAwesomeIcon icon={faGithub} />
 const iconLinkedin = <FontAwesomeIcon icon={faLinkedinIn} />
@@ -101,7 +103,7 @@ const IndexPage = () => {
                 <span role="img" aria-label="floppy">
                   💾
                 </span>{' '}
-                (This) Personal Porfolio
+                Personal Porfolio
               </Link>
             </h3>
             <p>
@@ -114,7 +116,7 @@ const IndexPage = () => {
                   <span>Gatsby</span>
                 </li>
                 <li className={blogStyles.projectsStackItem}>
-                  <span>React</span>
+                  <span>WordPress</span>
                 </li>
                 <li className={blogStyles.projectsStackItem}>
                   <span>Netlify</span>
@@ -124,6 +126,13 @@ const IndexPage = () => {
                 </li>
               </ul>
             </div>
+            <a
+              href="https://github.com/papaqui/portfolio"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {iconLink}
+            </a>
           </li>
           <li className={blogStyles.projectsPostItem}>
             <h3>
@@ -155,24 +164,28 @@ const IndexPage = () => {
                 </li>
               </ul>
             </div>
+            <a
+              href="https://www.drpapaqui.com.mx/calculadora-de-frecuencia-cardiaca-maxima/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {iconLink}
+            </a>
           </li>
           <li className={blogStyles.projectsPostItem}>
             <h3>
-              <a
-                href="https://www.drpapaqui.com.mx/calculadora-indice-de-masa-corporal/"
-                target="_blank"
-                rel="noreferrer"
-              >
+              <Link to="/bmi">
                 <span role="img" aria-label="estetoscopio">
                   🩺
                 </span>{' '}
                 Body Mass Index Calculator
-              </a>
+              </Link>
             </h3>
             <p>
-              Vanilla JS web app to calculate body mass index and get a balanced
-              diet.
+              Vanilla JS web app to calculate body mass index and get references
+              to get a more balanced diet.
             </p>
+
             <div>
               <ul className={blogStyles.projectsStack}>
                 <li className={blogStyles.projectsStackItem}>
@@ -186,8 +199,22 @@ const IndexPage = () => {
                 </li>
               </ul>
             </div>
+
+            <a
+              href="https://www.drpapaqui.com.mx/calculadora-indice-de-masa-corporal/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {iconLink}
+            </a>
           </li>
         </ol>
+
+        <h2>Other projects</h2>
+        <p>Projects I've built either to learn or to have fun.</p>
+        <Link className={blogStyles.projectBtn} to="/work">
+          Archive
+        </Link>
       </div>
 
       <div className={blogStyles.blogPosts}>

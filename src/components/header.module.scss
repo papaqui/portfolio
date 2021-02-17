@@ -36,17 +36,15 @@
   margin: 0;
 }
 .nav-item {
-  text-transform: uppercase;
-  color: #999999;
-  // font-size: 0.9rem;
+  color: #542c85;
   font-size: 0.9rem;
   font-weight: 500;
-  margin-right: 1.3rem;
+  margin-left: 1.4rem;
   text-decoration: none;
 }
 .nav-item:hover {
-  color: #666666;
+  color: #7026b9;
 }
 .active-nav-item {
-  color: #333333;
+  color: #7026b9;
 }
