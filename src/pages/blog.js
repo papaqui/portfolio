@@ -37,7 +37,6 @@ const BlogPage = () => {
       </p>
 
       <div className={blogStyles.blogPosts}>
-        <h2>Blog posts</h2>
         <ol className={blogStyles.blogPostsList}>
           {data.allWpPost.edges.map(edge => (
             <li className={blogStyles.blogPostItem}>

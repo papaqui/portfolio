@@ -290,7 +290,25 @@ CONTACT
     margin: 0 0.3rem;
   }
 }
+/* ---------------
+ARCHIVE LIST
+--------------- */
+.archive-list {
+  margin-left: 0;
 
+  h3 {
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin-bottom: 0.7rem;
+  }
+  p {
+    font-size: 0.9rem;
+  }
+}
+
+/* ---------------
+QUERIES
+--------------- */
 @media screen and (max-width: 800px) {
   .header-home p,
   .blog-description {
