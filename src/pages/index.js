@@ -99,6 +99,40 @@ const IndexPage = () => {
         <ol className={blogStyles.projectsPostsList}>
           <li className={blogStyles.projectsPostItem}>
             <h3>
+              <a
+                href="https://www.papaqui.mx/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <span role="img" aria-label="guitar">
+                  🎸
+                </span>{' '}
+                Artist Website
+              </a>
+            </h3>
+            <p>
+              Custom made WordPress template without using starters. Display of
+              pages, categories and blog functionality.
+            </p>
+            <div>
+              <ul className={blogStyles.projectsStack}>
+                <li className={blogStyles.projectsStackItem}>
+                  <span>WordPress</span>
+                </li>
+                <li className={blogStyles.projectsStackItem}>
+                  <span>DepolyHq</span>
+                </li>
+                <li className={blogStyles.projectsStackItem}>
+                  <span>PHP</span>
+                </li>
+              </ul>
+            </div>
+            <a href="https://www.papaqui.mx/" target="_blank" rel="noreferrer">
+              {iconLink}
+            </a>
+          </li>
+          <li className={blogStyles.projectsPostItem}>
+            <h3>
               <Link to="/">
                 <span role="img" aria-label="floppy">
                   💾
