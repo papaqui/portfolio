@@ -46,4 +46,17 @@
   .author-description {
     font-size: 0.9rem;
   }
+  .author-name {
+    position: relative;
+  }
+  .author-name:after {
+    content: '';
+    position: relative;
+    left: 0;
+    height: 1px;
+    width: 100px;
+    margin: 1rem 0;
+    display: block;
+    background-color: var(--magenta);
+  }
 }

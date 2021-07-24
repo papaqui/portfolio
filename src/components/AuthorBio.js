@@ -1,6 +1,6 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import layoutStyles from './layout.module.scss'
+import * as layoutStyles from './layout.module.scss'
 
 export const AuthorFragment = graphql`
   fragment AuthorBio on WpUser {

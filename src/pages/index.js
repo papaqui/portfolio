@@ -340,7 +340,7 @@ const IndexPage = () => {
         </div>
 
         <div className={blogStyles.madeWith}>
-          <div className={blogStyles.madeWithModule}>
+          <div>
             <p>Site made with</p>
             <a
               href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
@@ -358,14 +358,14 @@ const IndexPage = () => {
             </a>
           </div>
 
-          <div className={blogStyles.madeWithModule}>
+          <div>
             <p>Deployed with</p>
             <a href="https://www.netlify.com/" target="_blank" rel="noreferrer">
               <img src={netlifyLogo} alt="Netlify" />
             </a>
           </div>
 
-          <div className={blogStyles.madeWithModule}>
+          <div>
             <p>Headless CMS</p>
             <a href="http://wordpress.com/" target="_blank" rel="noreferrer">
               <img src={wordPressLogo} alt="WordPress" />
