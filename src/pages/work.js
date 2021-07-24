@@ -27,7 +27,7 @@ const Work = () => {
             beautiful beach of Puerto Escondido, Mexico.
           </p>
           <p>
-            This project uses a combination of custom theme, custom post types
+            This project uses a combination of a custom theme, custom post types
             for events and activities, custom fields to allow customer
             customization, integration with Stripe and PayPal, multilanguage
             support and an online booking platform that links to iCal calendars
