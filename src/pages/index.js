@@ -4,8 +4,8 @@ import { Link, graphql, useStaticQuery } from 'gatsby'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 
-import layoutStyles from '../components/layout.module.scss'
-import blogStyles from './blog.module.scss'
+import * as layoutStyles from '../components/layout.module.scss'
+import * as blogStyles from './blog.module.scss'
 
 import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
